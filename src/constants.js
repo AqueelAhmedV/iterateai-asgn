@@ -1,0 +1,1 @@
+export const ICONFINDER_SEARCH_ENDPOINT = 'https://api.iconfinder.com/v4/icons/search'
