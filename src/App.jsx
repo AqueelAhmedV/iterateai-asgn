@@ -36,8 +36,12 @@ function App() {
 
 
   return (
-    <div className="h-screen w-full p-32 ">
+    <div className="h-screen font-[Arial] w-full p-32 ">
+      <div className='w-full text-center mb-24'>
+      <span className='text-4xl  font-bold'>Productify</span>
+      </div>
       <div className='flex flex-col items-center'>
+
         <span className='flex justify-between items-center w-full p-4'>
           <ProductInput value={productIdea} onChange={handleProductInputChange} onSubmit={handleIdeaSubmit} />
           {loading.icon && <LoadingSpinner className='h-12 w-12' />}
