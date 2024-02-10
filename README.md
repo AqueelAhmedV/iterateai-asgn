@@ -1,8 +1,20 @@
-# React + Vite
+# Iterate AI Internship Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is developed with vite, tested using jest, bundled using babel, set up with github actions workflows, and dockerized.
 
-Currently, two official plugins are available:
+---
+### Approach
+- Icon Generation:\
+Icon generation is made possible using Open AI's API, image to text, Dall-E-2 model, with additional prompts to generate icons specifically.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Styling:\
+Styling is handled using Tailwind CSS
+
+- Testing:\
+Testing is implemented using Jest, and Testing Library.
+
+- Pipeline:\
+CI\CD Pipeline configuration can be found in `workflows/tests.yml`. currently only automation upto testing on pushing to main branch is setup
+
+- Deployment:\
+Docker configuration is written for hosting on a linux server running Apache Nginx. Currently, the app is hosted on Vercel which deploys the app on push.
